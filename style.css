@@ -1,0 +1,27 @@
+body {
+    margin: 20px;
+    background-color: #006bb6;
+    
+}
+p {
+    color: white;
+    font-size: 18px;
+}
+h1, h2 {
+    text-decoration-line: underline;
+    color: white;
+    text-shadow: 1px 1px #ed174c; 
+}
+#border-layout {
+    margin: auto;
+    width: 20%;
+    padding: 10px;
+    border: 2px solid #ed174c;
+    display: block;
+}
+#border-layout-two {
+    width: 20%;
+    padding: 10px;
+    border: 2px solid #ed174c;
+    margin: auto;
+}
