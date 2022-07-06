@@ -1,7 +1,6 @@
 body {
     margin: 20px;
-    background-color: #006bb6;
-    
+    background-color: #006bb6; 
 }
 p {
     color: white;
@@ -12,16 +11,87 @@ h1, h2 {
     color: white;
     text-shadow: 1px 1px #ed174c; 
 }
-#border-layout {
+ul {
+    font-size: 22px;
+}
+img {
+    width: 430px;
     margin: auto;
+}
+
+
+
+#windu {
+    color: purple;
+    text-shadow: 1px 1px black;
+}
+#yoda {
+    color: green;
+    text-shadow: 1px 1px black;
+}
+#vader {
+    color: red;
+    text-shadow: 1px 1px black;
+}
+
+
+
+#border-layout {
+    margin-left: 10px;
     width: 20%;
-    padding: 10px;
+    padding: 25px;
     border: 2px solid #ed174c;
-    display: block;
+    display: inline-block;
+    box-sizing: border-box;
 }
 #border-layout-two {
     width: 20%;
-    padding: 10px;
+    padding: 25px;
     border: 2px solid #ed174c;
+    display: inline-block;
+    box-sizing: border-box;
+    vertical-align: top;
     margin: auto;
+}
+
+
+
+
+#container {
+    width: 40%;
+    margin: auto;
+    border: 3px solid rgb(145, 0, 0);
+    border-top: 10px solid purple;
+    padding: 500px;
+}
+#about-star-wars {
+    margin-left: -47%;
+    margin-top: -48%;
+    margin-right: 110%;
+    outline: solid red;
+    box-sizing: border-box;
+    padding: 5px;
+}
+#about-span {
+    color: #ed174c;
+    text-shadow: 1px 1px black;
+}
+#official-info {
+    margin-left: -9%;
+    margin-top: -23.6%;;
+    outline: solid red;
+    box-sizing: border-box;
+    width: 50%;
+    padding: 5px;
+}
+#new-hope-img {
+    width: 270px;
+    height: 270px;
+    display: inline-block;
+}
+#star-wars-description {
+    display: inline-block;
+    margin-left: 8px;
+    margin-top: 0%;
+    vertical-align: top;
 }
