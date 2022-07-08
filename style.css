@@ -201,7 +201,7 @@ img {
   }
 
   @media all and (min-width: 600px) {
-    .aside-two { flex: 1 0 0; }
+    .aside-two, .aside-three { flex: 1 0 0; }
   }
 
   @media all and (min-width: 800px) {
@@ -209,5 +209,5 @@ img {
     .aside-two {order: 1; }
     .article-two {order: 2; }
     .aside-three {order: 3; }
-    .footer {order: 4; }
+    .footer-two {order: 4; }
   }
