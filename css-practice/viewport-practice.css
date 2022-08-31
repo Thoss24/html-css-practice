@@ -16,5 +16,46 @@ body {
     content-box
     ;
 }
-
 /* standard background properties combination */
+
+
+a:hover {
+    color: green;
+}
+/* hover effect added when user mouses over the link element it will turn green */
+
+
+.list:nth-child(3) {
+    color: red;
+}
+/* :nth-child() is a way to select a specific element within another element
+here I selected the 3rd element in .list and changed its color */
+
+
+
+
+
+body div {
+    /* selects all child and grand-child divs inside body */
+}
+
+body > div {
+    /* this will select only child divs */
+}
+
+body > div > div {
+    /* this will select only grand-child divs */
+}
+
+main + div {
+    /* will select adjacent div on same level of indentation */
+}
+
+main + div + div { 
+    /* will select the div that is the third group of the same indentation */
+}
+
+body ~ div {
+    /* will select all of a groups siblings in other words all divs at this indentation */
+}
+
