@@ -5,3 +5,16 @@
     font-family: 'Josefin Sans', sans-serif;
 }
 /* font grows for every 100px of the viewport width */
+
+body {
+    background: 
+    url(../images/new-hope.jpeg)
+    center / 100px 100px
+    no-repeat
+    fixed
+    padding-box
+    content-box
+    ;
+}
+
+/* standard background properties combination */
