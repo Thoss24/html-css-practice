@@ -24,6 +24,20 @@ a:hover {
 }
 /* hover effect added when user mouses over the link element it will turn green */
 
+h1::first-letter {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: red;
+}
+/* first letter pseudo-element used to style the first letter of the h1 element */
+
+
+img[src^="star"] {
+
+    /* ^ will match strings from the start 
+    $ will match strings at the end 
+    * will match strings anywhere */
+}
+/* this is an attribute selector, in this case its used to select an image element with the src attribute with the string "star at the beginning of the link */
 
 .list:nth-child(3) {
     color: red;
