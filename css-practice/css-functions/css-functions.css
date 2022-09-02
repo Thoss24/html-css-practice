@@ -1,4 +1,5 @@
-:root {
+  
+  :root {               /* declaring custom selectors on the root selector allows us to access it from any other valid selector within the CSS file */
     --header: 3rem;
     --footer: 40px;
     --main: calc(100vh - calc(var(--header) + var(--footer)));
@@ -16,6 +17,8 @@
     height: var(--header);
     background-color: black;
 }
+/* here a custom selector (--header) has been used, (which was previously defined in the ::root selector) to assign a value to the height property
+this has also been done with the main and footer elements as well */
 
 .main {
     height: var(--main);
@@ -47,3 +50,34 @@
     border: 6px solid blue;
 }
 /* if there are 150px available to the image, it will take up 150px. If not, it will switch to 100% of the parents width.  */
+
+#container-two {
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 6px solid black;
+    resize: both;
+    overflow: auto;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+#text {
+    font-size: clamp(10px, 20px, 10rem);
+}
+/* clamp is has three values. clamp(smallest value, ideal value, largest value) this method is a great way to make elements fluid and responsive */
+
+#iconHolder-two {
+    width: max(100px, 4em, 50%);
+    height: max(100px, 4em, 50%);
+    box-sizing: border-box;
+    border: 6px solid blue;
+}
+/* the max() function works the same as min() just in reverse. 
+from the list of given sizes, max() will select the largest one.
+as long as 4em or 50% result in lengths longer than 100px, max() will select the largest one.
+100px is a guard value, width and height will never be less than 100px. */
+
+
