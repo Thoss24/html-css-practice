@@ -1,0 +1,33 @@
+.parent {
+width: 80%;
+height: 200vh;
+background-color: blue;
+position: relative;
+}
+
+.child-one {
+padding: 10px;
+background-color: greenyellow;
+position: absolute;
+top: 0;
+right: 0;
+}
+
+.child-two {
+padding: 10px;
+background-color: orange;
+}
+
+.child-three {
+padding: 10px;
+background-color: pink;
+}
+
+/* 
+1. static: Default position.
+2. relative : Same as static. But lets you add top, right, bottom, left. Makes it move relative to it's normal position
+3. absolute: Removes from the flow and positions absolute with reference to the parent. Parent has to be relative or absolute for top, right, bottom, left to work. Else it considers the main html element as the  parent .
+4. fixed : Fixed to a place. Doesn't care about the the parent. Always considers html element as the parent. Stays there when scrolled.
+5. sticky : Relative ( when normal) + fixed ( when scrolled). The values for top, right, bottom, left become active when scrolled 
+*/
+
