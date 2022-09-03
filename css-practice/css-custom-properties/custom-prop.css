@@ -1,0 +1,34 @@
+:root {
+    --background-clr: rgb(120, 144, 168);
+    --footer-height: 4rem;
+    --header-height: 4rem;
+    --main-height: calc(100vh - calc(var(--footer-height) + var(--header-height)));
+}
+
+body {
+    background-color: var(--background-clr);
+    color: var(--main-text-clr);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.heading {
+    height: var(--header-height);
+    outline: 1px solid black;
+}
+
+.main-content {
+    height: var(--main-height);
+    outline: 1px solid black;
+    overflow: auto;
+    flex: auto;
+}
+
+.footing {
+    height: var(--footer-height);
+    outline: 1px solid black;
+}
