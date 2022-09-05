@@ -1,0 +1,28 @@
+fieldset {
+    width: 500px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    padding-top: 6px;
+}
+
+.section-two {
+    padding-top: 20px;
+}
+
+.section-three {
+    padding-top: 10px;
+}
+
+.legend-title {
+    font-size: 20px;
+    text-decoration: underline;
+    padding-bottom: 6px;
+}
+

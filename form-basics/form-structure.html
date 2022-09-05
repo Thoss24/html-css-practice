@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../form-basics/form-structure.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <form action="" method="post">
+
+    <fieldset>
+
+        <section class="section-one">
+            <legend class="legend-title">Personal details</legend>
+        <ul>
+            <li><label for="name">Name:</label></li>
+            <li><input type="text" id="name" name="username"></li>
+            <li><label for="age">Age:</label></li>
+            <li><input type="number" id="age" name="user-age" placeholder="Enter numbers only"></li>
+        </ul>
+        </section>
+
+        <section class="section-two">
+            <legend class="legend-title">Comment information</legend>
+        <ul>
+            <li><label for="comment">Comment:</label></li>
+            <li><textarea name="user_comment" id="comment" cols="30" rows="10"></textarea></li>
+            <li><label for="email">Email:</label></li>
+            <li><input type="email" id="email" name="user-email" placeholder="you@example.com"></li>
+        </ul> 
+        </section>
+
+        <section class="section-three">
+            <ul>
+                <li><label for="button">Submit details</label></li>
+                <li><button type="submit">Submit</button></li>
+            </ul>
+        </section>
+    
+    </fieldset>
+
+    </form>
+    
+</body>
+</html>
