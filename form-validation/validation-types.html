@@ -11,29 +11,62 @@
 
         <div>
             <label for="email">* Email</label>
-            <input type="email" id="email" name="email" required>
         </div>
+            <input type="email" id="email" name="email" placeholder="you@example.com" required>
+          <!-- required validation -->
 
         <div>
             <label for="password">* Password</label>
-            <input type="password" id="password" name="password" placeholder="you@example.com" required>
         </div>
+            <input type="password" id="password" name="password" required>
+         <!-- required validation-->
 
         <div>
             <label for="tweet">Tweet</label>
-            <textarea name="tweet" id="tweet" cols="30" rows="10" minlength="3" maxlength="120"></textarea>
         </div>
+            <textarea name="tweet" id="tweet" cols="30" rows="10" minlength="3" maxlength="120" placeholder="PLease enter between 3 and 120 characters =^.^="></textarea>
+          <!-- min & max length validation-->
 
         <div>
             <label for="number">Quantity</label>
-            <input type="number" id="number" name="number" min="1" max="10" required>
         </div>
+            <input type="number" id="number" name="number" min="1" max="10" required>
+         <!-- min & max number value validation-->
 
         <div>
+            <label for="postcode">Postcode</label>
+        </div>
+            <input type="text" id="postcode" name="postcode" pattern="(\d{5}([\-]\d{4})?)" title="Please enter a valid zip-code" placeholder="e.g 12345-1234" required>
+         <!-- pattern validation-->
 
+        <div>
             <button type="submit">Submit</button>
         </div>
 
     </form>
+
+    <style>
+
+        * {
+            box-sizing: border-box;
+            
+        }
+
+        input {
+            border: 2px solid #000;
+            margin-bottom: 15px;
+            padding: 5px;
+            border-radius: 5px;
+        }
+
+        input:valid {
+            border-color: green;
+        }
+
+        input:invalid {
+            border-color: red;
+        }
+    </style>
+
 </body>
 </html>
