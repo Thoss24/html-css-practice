@@ -10,7 +10,19 @@
     grid-template-columns: repeat(2, 2fr) repeat(3, 1fr); /* first two columns are larger that the last 3 columns because of the two repeat methods */
     grid-template-rows: repeat(2, 1fr);
 
-    /* grid-template-columns: repeat(5, max(120px, 15%));  min and max value used which is saying that the track size should be 50% unless it exceeds 200px
+    /* grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); AUTO-FILL works similarly to AUTO-FIT, however the grid items will instead snap down to their min size once space becomes available to add another grid item.
+    grid-template-rows: repeat(2, 1fr); */
+
+    /* grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); AUTO-FIT returns the highest possible integer without overflowing the grid. basically the screen will automatically fit all the elements inside the grid when resizing the page.
+    grid-template-rows: repeat(2, 1fr); */
+
+    /* grid-template-columns: repeat(5, clamp(150px, 80%, 1000px)); CLAMP is used to create not only a min and max size, but also an ideal size. the grid will render at 80% but will resize to 150px or 1000px if the grid reaches those sizes.
+    grid-template-rows: repeat(2, 1fr); */
+
+    /* grid-template-columns: repeat(5, minmax(150px, 200px)); MINMAX is used for a similar purpose, the grid will stop shrinking at 150px and stop growing at 200px. Use MINMAX or CLAMP when working with images especially.
+    grid-template-rows: repeat(2, 1fr); */
+
+    /* grid-template-columns: repeat(5, max(120px, 15%));  MIN and MAX value used which is saying that the track size should be 50% unless it exceeds 200px
     grid-template-rows: repeat(2, min(200px, 50%));  */
 
     /* grid-template-columns: repeat(5, 1fr);
