@@ -1,0 +1,32 @@
+.box {
+    display: inline-block;
+    background: pink;
+    width: 200px;
+    height: 200px;
+    transition: transform 300ms ease-in-out;
+    pointer-events: none;
+}
+
+.trigger {
+    margin: 50px;
+    width: 200px;
+    height: 200px;
+    border: 20px solid gray;
+    background-color: #ddd;
+}
+
+.trigger.clicked .box {
+    transform: translate(200px, 150px) rotate(20deg);
+}
+
+/* .trigger:hover .box {
+    transform: translate(200px, 150px) rotate(20deg);
+} */
+
+
+
+/* transition: property, duration, ease, delay */
+
+/* you should only transition font-size, background-color. width, left (how far from the left something is positioned) */
+
+/* triggering a transition is typically done with hover, or a class change */
